@@ -4,8 +4,10 @@ html {
 
 body {
     height: 100%;
+    font-family: 'Merriweather Sans', sans-serif;
 }
 
+/*MENU*/
 nav {
     background-color: #cdacac;
     display: flex;
@@ -16,7 +18,7 @@ nav {
 }
 
 nav a {
-    font-size: 25px;
+    font-size: 15px;
     text-decoration: none;
     color: #fdf6fd;
     font-weight: bold;
@@ -26,6 +28,17 @@ nav a:hover {
     text-decoration: underline;
 }
 
+@media only screen and (max-width: 1120px) {
+    nav {
+        flex-direction: column;
+        padding: 10px;
+    }
+}
+
+/*_________*/
+
+
+/*Forside*/
 #splash {
     background-image: url(splash.svg);
     width: 100%;
@@ -33,9 +46,41 @@ nav a:hover {
     background-size: cover;
 }
 
-@media only screen and (max-width: 1120px) {
-    nav {
-        flex-direction: column;
-        padding: 10px;
+
+
+
+/*________________*/
+
+/*Om_CV_side*/
+
+.sectionwrapper {
+    display: flex;
+    padding-top: 20px;
+}
+
+@media only screen and (max-width: 800px) {
+    .sectionwrapper {
+        flex-wrap: wrap;
     }
 }
+
+.col1 {
+    flex-basis: 650px;
+}
+
+.col2 {
+    flex-basis: 650px;
+    padding-left: 20px;
+}
+
+.col1 img {
+    width: 100%;
+}
+
+/*Menu_CV*/
+
+.om {
+    padding-bottom: 20px;
+}
+
+/*______*/
